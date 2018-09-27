@@ -1,14 +1,11 @@
 ---
 layout: default
 title: 日本語
-section: future
-permalink: /nihongo/
 ---
-# 日本語
 
 上手になるために時々日本語で書いてみる。
 
-{% for post in site.categories.nihongo %}
+{% for post in site.posts %}
 {%   if forloop.first %}
 <h2 id="{{ post.date | date: "%Y-ref" }}">{{ post.date | date: "%Y年" }}</h2>
 <h3 id="{{ post.date | date: "%Y-%m-ref" }}">{{ post.date | date: "%m月" }}</h3>
